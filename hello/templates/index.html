@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    var rightA = "ZHOPA"
+    var text = "lox, pidr"
+    function on_click(){
+      var v = $("#input").val()
+      if(v === rightA){
+        alert(text);
+      }else{
+        alert('nepravilnii otvet')
+      }
+
+    }
+
+  </script>
+</head>
+<body>
+
+<h1>ANSWER</h1>
+<input type="text" name="pipec" id = 'input' >
+<br>
+<button onclick="on_click()">Check</button>
+
+</body>
+</html>
