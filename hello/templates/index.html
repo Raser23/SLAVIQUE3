@@ -4,28 +4,51 @@
   <title></title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
-    var rightA = "stigmata"
-    var text = "Sosi hui(+)"
+    var rightA = "otvet"
+    var text = "wodahs18@yandex.ru\nJung1337"
     function on_click(){
       var v = $("#input").val()
-      if(v.toLowerCase() === rightA.toLowerCase()){
+      if(v === rightA){
         alert(text);
       }else{
-        alert('nepravilnii otvet')
+        alert('Неправильный код')
       }
 
     }
 
   </script>
+
+  <style type="text/css">
+  input {
+    text-align: center;
+    size:40;
+  }
+  body {
+      background-color: #b3c6ff; /* Цвет фона */
+    }
+
+    .center{
+      margin: auto;
+      display: table;
+
+    }
+    .centerV{
+      position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    }
+
+  </style>
+
 </head>
 <body>
 
-<div style = "margin: auto;display: table;">
-	<h1>ANSWER</h1>
-	<input type="text" name="pipecPolnii" id = 'input' >
-	<br>
-	<button onclick="on_click()" style = "margin: auto;display: table;">Check</button>
-	<img style = "margin: auto;display: table;" src="https://hydra-media.cursecdn.com/bindingofisaacrebirth.gamepedia.com/archive/3/3d/20151124234752%21Lockeditemroomdoor.png?version=ed211d48a3af8e9f131cc38270d4e085">
+<div  class="center centerV">
+  <h1 class="center">ANSWER</h1>
+  <input type="text" name="pipecPolnii" id = 'input' >
+  <br>
+  <button onclick="on_click()" class="center">Check</button>
 </div>
 </body>
 </html>
