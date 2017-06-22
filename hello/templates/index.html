@@ -8,7 +8,7 @@
     var text = "wodahs18@yandex.ru\nJung1337"
     function on_click(){
       var v = $("#input").val()
-      if(v === rightA){
+      if(v.toLowerCase() === rightA.toLowerCase()){
         alert(text);
       }else{
         alert('Неправильный код')
